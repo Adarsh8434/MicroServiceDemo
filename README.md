@@ -77,7 +77,7 @@ Run each service using the following command in their respective directories:
 4.Run Services Locally
 
 Run each service using the following command in their respective directories:
-   ```bash
+    ```bash
  mvn spring-boot:run
 
 # Running the Project
