@@ -71,14 +71,9 @@ Example:
 4.Run Services Locally
 
 Run each service using the following command in their respective directories:
-    ```bash
-   mvn spring-boot:run
-
-4.Run Services Locally
-
-Run each service using the following command in their respective directories:
-    ```bash
- mvn spring-boot:run
+      
+      ```bash
+      mvn spring-boot:run
 
 # Running the Project
 Once the services are built, run them as Spring Boot applications. Each service will start independently, and they will register with the service registry (Eureka) so that they can discover each other.
