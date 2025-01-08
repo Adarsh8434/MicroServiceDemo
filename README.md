@@ -57,9 +57,9 @@ To get started with this project locally, follow these steps:
 Ensure that you have MySQL running locally or use a remote MySQL database. Update the application.properties file in each service (e.g., QuestionService, QuizService) to point to your database.
 
 Example:
--spring.datasource.url=jdbc:mysql://localhost:3306/microservice_db
--spring.datasource.username=root
--spring.datasource.password=password
+- spring.datasource.url=jdbc:mysql://localhost:3306/microservice_db
+- spring.datasource.username=root
+- spring.datasource.password=password
 
 3. **Build the Project**
 
@@ -72,15 +72,14 @@ Example:
 
 Run each service using the following command in their respective directories:
       
-      ```bash
       mvn spring-boot:run
 
 # Running the Project
 Once the services are built, run them as Spring Boot applications. Each service will start independently, and they will register with the service registry (Eureka) so that they can discover each other.
 
--API Gateway: The entry point for all requests.
--Question Service: Manages questions for quizzes.
--Quiz Service: Manages quizzes and user interactions.
--Service Registry (Eureka): Tracks the status and location of each service.
+- API Gateway: The entry point for all requests.
+- Question Service: Manages questions for quizzes.
+- Quiz Service: Manages quizzes and user interactions.
+- Service Registry (Eureka): Tracks the status and location of each service.
 
 
