@@ -57,21 +57,27 @@ To get started with this project locally, follow these steps:
 Ensure that you have MySQL running locally or use a remote MySQL database. Update the application.properties file in each service (e.g., QuestionService, QuizService) to point to your database.
 
 Example:
-spring.datasource.url=jdbc:mysql://localhost:3306/microservice_db
-spring.datasource.username=root
-spring.datasource.password=password
+-spring.datasource.url=jdbc:mysql://localhost:3306/microservice_db
+-spring.datasource.username=root
+-spring.datasource.password=password
 
 3. **Build the Project**
 
-Navigate to the root of each service and run the following command to build and install the Maven dependencies:
-
-  ```bash
- mvn clean install
+   Navigate to the root of the project and run the following command to build and install all Maven dependencies for all services at once:
+   
+   ```bash
+   mvn clean install
 
 4.Run Services Locally
 
 Run each service using the following command in their respective directories:
-```bash
+    ```bash
+   mvn spring-boot:run
+
+4.Run Services Locally
+
+Run each service using the following command in their respective directories:
+   ```bash
  mvn spring-boot:run
 
 # Running the Project
