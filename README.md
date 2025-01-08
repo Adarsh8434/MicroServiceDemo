@@ -61,24 +61,25 @@ spring.datasource.url=jdbc:mysql://localhost:3306/microservice_db
 spring.datasource.username=root
 spring.datasource.password=password
 
-3.Build the Project
+3. **Build the Project**
 
 Navigate to the root of each service and run the following command to build and install the Maven dependencies:
 
-# mvn clean install
+  ```bash
+ mvn clean install
 
 4.Run Services Locally
 
 Run each service using the following command in their respective directories:
-
-# mvn spring-boot:run
+```bash
+ mvn spring-boot:run
 
 # Running the Project
 Once the services are built, run them as Spring Boot applications. Each service will start independently, and they will register with the service registry (Eureka) so that they can discover each other.
 
-API Gateway: The entry point for all requests.
-Question Service: Manages questions for quizzes.
-Quiz Service: Manages quizzes and user interactions.
-Service Registry (Eureka): Tracks the status and location of each service.
+-API Gateway: The entry point for all requests.
+-Question Service: Manages questions for quizzes.
+-Quiz Service: Manages quizzes and user interactions.
+-Service Registry (Eureka): Tracks the status and location of each service.
 
 
